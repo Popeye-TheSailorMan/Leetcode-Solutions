@@ -5,11 +5,9 @@ class Solution:
             digit = [i for i in digits] 
             res = []
             ans = []
-            counter = 1
             for i in digit:
                 if(int(i)!=1):
                     word = [j for j in let[int(i)]]
-                    counter*=len(word)
                     if(len(digit)==1):
                         return word
                     elif(len(digit)>1 and res == []):
@@ -25,9 +23,6 @@ class Solution:
             for i in range(0,len(res)):
                 if (len(res[i])==len(digits)):
                     result.append(res[i])
-                
-                    
-            
             return result
         
         return []
