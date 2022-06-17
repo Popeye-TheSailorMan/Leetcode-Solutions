@@ -10,10 +10,9 @@ class Solution:
         #         i+=1
         # return len(nums)
         seen = []
-        k = 0
         for i in range(0,len(nums)):
             if nums[i] in seen:
-                nums[i] = 101
+                nums[i] = 200
             else:
                 seen.append(nums[i])
         nums.sort()
